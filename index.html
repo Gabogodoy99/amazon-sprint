@@ -20,7 +20,7 @@
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid"> 
                 <a href="index.html" class="logo"> <!--logo de amazon-->
-                    <img src="./imagenes/logo.png" alt="logo de amazon">
+                    <img src="./imagenes/logoimg.png" alt="logo de amazon">
                 </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -42,14 +42,13 @@
                                     Menú <!--barra de menu-->
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="hola e identificate cuenta y listas ">hola e
+                                    <li><a class="dropdown-item" href="./pages/hola e identificate.html">hola e
                                             identificate Cuenta Y listas </a></li>
                                     <li><a class="dropdown-item" href="Devoluciones y Pedidos">Devoluciones y
                                             Pedidos</a></li>
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
-                                    <li><a class="dropdown-item" href="Carrito">Carrito</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -58,6 +57,10 @@
                             <button class="btn btn-outline-success" type="submit">Buscar</button>
                         </form>
                     </div>
+                    <a href="">
+                        <img class = "carrito" src="./imagenes/carrito.png" alt="carrito">
+                        <span class="texto-carrito">0</span>
+                    </a>
             </div>
         </nav>
         <nav class="nvgdos"> <!--barra secundaria de navegacion -->
@@ -93,35 +96,41 @@
     </header>
     <main class="container">
         <section class="padre"> <!--articulos varios -->
-            <article class="hijo">
-                <img class="img2" src="./imagenes/electronicos.jpg" alt="imagen de una notebook">
-                <h2>Electronicos</h2>
-                <button class="btn">Comprar ahora</button>
+            <article class="hijo" id="electronicos">
+                <img src="./imagenes/electronicos.jpg" alt="imagen de una notebook">
+                <h2 class="producto">Electronicos</h2>
+                <p class="precio"> $199 <span>.99</span></p>
+                <button class="btn" id="btn-1">Añadir al carrito</button> 
             </article>
-            <article class="hijo">
-                <img class="img4" src="./imagenes/amazon basics.jpg" alt="mac y iphone">
-                <h2>Amazon basics</h2>
-                <button class="btn">Comprar ahora</button>
+            <article class="hijo" id="amazon">
+                <img src="./imagenes/amazon basics.jpg" alt="mac y iphone">
+                <h2 class="producto">Amazon basics</h2>
+                <p class="precio"> $29 <span>.99</span></p>
+                <button class="btn">Añadir al carrito</button>
             </article>
-            <article class="hijo">
-                <img class="img3" src="./imagenes/juguetes por menos de usd 30.jpg" alt="accesorios para juegos">
-                <h2>Juguetes por menos de USD 30</h2>
-                <button class="btn">Comprar ahora</button>
+            <article class="hijo" id="juguetes">
+                <img src="./imagenes/juguetes por menos de usd 30.jpg" alt="accesorios para juegos">
+                <h2 class="producto">Juguetes por menos de USD 30</h2>
+                <p class="precio"> $19 <span>.99</span></p>
+                <button class="btn" >Añadir al carrito</button>
             </article>
-            <article class="hijo"> 
-                <img class="img5" src="./imagenes/Hogar y Cocina por menos de USD 30.jpg"alt="imagenes/hogar y cocina ">
-                <h2>Hogar y cocina por menos de USD 30</h2>
-                <button class="btn">Comprar ahora</button>
+            <article class="hijo" id="hogar"> 
+                <img src="./imagenes/Hogar y Cocina por menos de USD 30.jpg"alt="imagenes/hogar y cocina ">
+                <h2 class="producto">Hogar y cocina por menos de USD 30</h2>
+                <p class="precio"> $29 <span>.99</span></p>
+                <button class="btn">Añadir al carrito</button>
             </article>
-            <article class="hijo">
-                <img class="img6" src="./imagenes/seleccionados en belleza.jpg" alt="seleccionados en belleza">
-                <h2>Seleccionados en belleza</h2>
-                <button class="btn">Comprar ahora</button>
+            <article class="hijo" id="seleccionados">
+                <img src="./imagenes/seleccionados en belleza.jpg" alt="seleccionados en belleza">
+                <h2 class="producto">Seleccionados en belleza</h2>
+                <p class="precio"> $49 <span>.99</span></p>
+                <button class="btn">Añadir al carrito</button>
             </article>
-            <article class="hijo">
-                <img class="img7" src="./imagenes/salud y cuidado personal.jpg" alt="salud y cuidado personal">
-                <h2>Salud y cuidado personal</h2>
-                <button class="btn">Comprar ahora</button>
+            <article class="hijo" id="salud">
+                <img src="./imagenes/salud y cuidado personal.jpg" alt="salud y cuidado personal">
+                <h2 class="producto">Salud y cuidado personal</h2>
+                <p class="precio"> $59 <span>.99</span></p>
+                <button class="btn">Añadir al carrito</button>
             </article>
         </section>
     </main>

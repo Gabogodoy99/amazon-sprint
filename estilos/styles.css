@@ -1,5 +1,15 @@
+/* body uno index html*/
 body{
     background-color: #131921;
+    font-family: sans-serif;
+    margin: 0;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+/*body dos enviar a argentina*/
+
+/* body tres hola e identificate*/
+.body-tres{
+    background-color: #FFFFFF;
     font-family: sans-serif;
     margin: 0;
     font-family: 'Barlow Condensed', sans-serif;
@@ -7,7 +17,7 @@ body{
 /*barra de navegacion cambios*/ 
 header a{
     text-decoration: none;
-    color: _#FFFFFF;
+    color: #FFFFFF;
 }
 header.logo{
     display: flex;
@@ -17,23 +27,113 @@ header.logo{
     height: 50px;
     margin-right: 20px;
 }
-/*barra secundaria de navegacion*/
+/* logo hola e identificate*/
+.img-logo{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    margin-right: 20px
+}    
+.carrito{
+    position: relative;
+    background-color: #232F3E;
+    border: 2px #232F3E solid;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    transition:: background-color .3s ease-in-out;
+    margin-left: 20px;
+}
+/*
+.carrito:hover{
+    background-color: #232F3E;
+    border-color: #283546;
+} */
+.texto-carrito{
+    position: absolute;
+    background-color: black;
+    border-radius: 50% ;
+    border: 2px black solid;
+    right: -10px;
+    top: -10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFFFFF;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    margin: o auto;
+}
+/*barra secundaria de navegacion index*/
 .nvgdos{
+    display: flex;
     height: 100%;
     width: 100%;
     background-color: #232F3E;
-    justify-content: space-around;
+    text-align: center;
     padding: 20px;
-    display: flex;
     color: #FFFFFF;
 }
-/*seccion y articulos*/
+/*barra de navegacion hola e identificate*/
+.inicia-sesion{
+    background-color: #FFFFFF
+    color: black;
+    height: 400px;
+    width: 30rem;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 40px;
+    padding-inline: 90px;
+    margin: 0 auto;
+    border-radius: 50px;
+}
+.input{
+    width: 320px;
+    align-items: center;
+}
+.btn-continue{
+    border-radius: 20px;
+    width: 320px;
+    margin: 10px;
+    background-color: yellow;
+    color: black;
+    align-items: center;
+}
+/*seccion y articulos index*/
+
 section .hijo{
     color: white;
+    background-color: #202a36;
+    margin: 30px;
+    border-radius: 20px 20px 0px 0px ;
+    box-shadow: #2a3646;
+} 
+section .hijo :hover{
+    background-color: #2e3949;
+    border-radius: 20px;
+}
+.producto{
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-weight: 400;
+}
+.precio{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-weight: 400;
 }
 section .hijo img{
+    object-fit: cover;
+    border-radius: 20px;
     width: 300px;
-    height: 200px
+    height: 200px 
 }
 .padre{
     display: flex;
@@ -42,16 +142,42 @@ section .hijo img{
     gap: 15px;
     margin-top: 100px;
 }
-/*barra del boton comprar*/
+.scroll{
+    background:#131921;
+    box-shadow: .1rem .2rem .3rem rgb(14, 0, 0);
+    
+}
+.container.scroll{
+    filter: invert(15%);
+}
+/*barra del boton comprar index*/
 .btn{
+    display: block;
     background-color: #FFFFFF;
     padding-bottom: 10px;
     border-radius: 10px;
+    margin: 100px ;
 }
-/*barra de footer*/
+/*barra de footer index*/
 .footer-nav {
     display: flex;
-    padding: 50px;
-    justify-content: space-around;
+    padding: 40px;
+    text-align: center;
     color: #FFFFFF;
     }
+
+@media screen and (min-width:1200px ) {
+    .nvgdos{
+        text-align: center;
+        justify-content: space-around
+    }
+    .btn{
+        display: block;
+        margin: 0 auto;
+    }
+    .footer-nav{
+        text-align: center;
+        justify-content: space-around;
+        padding: 50px;
+    }
+}
