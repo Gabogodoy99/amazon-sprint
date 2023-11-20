@@ -5,16 +5,8 @@ body{
     margin: 0;
     font-family: 'Barlow Condensed', sans-serif;
 }
-/*body dos enviar a argentina*/
 
-/* body tres hola e identificate*/
-.body-tres{
-    background-color: #FFFFFF;
-    font-family: sans-serif;
-    margin: 0;
-    font-family: 'Barlow Condensed', sans-serif;
-}
-/*barra de navegacion cambios*/ 
+/* logo de amazon index*/
 header a{
     text-decoration: none;
     color: #FFFFFF;
@@ -27,13 +19,17 @@ header.logo{
     height: 50px;
     margin-right: 20px;
 }
-/* logo hola e identificate*/
-.img-logo{
+/*barra secundaria de navegacion index*/
+.nvgdos{
     display: flex;
-    justify-content: center;
-    height: 50px;
-    margin-right: 20px
-}    
+    height: 100%;
+    width: 100%;
+    background-color: #232F3E;
+    text-align: center;
+    padding: 20px;
+    color: #FFFFFF;
+}
+/*carrito index */
 .carrito{
     position: relative;
     background-color: #232F3E;
@@ -44,11 +40,7 @@ header.logo{
     transition:: background-color .3s ease-in-out;
     margin-left: 20px;
 }
-/*
-.carrito:hover{
-    background-color: #232F3E;
-    border-color: #283546;
-} */
+/*texto carrito index*/
 .texto-carrito{
     position: absolute;
     background-color: black;
@@ -66,43 +58,7 @@ header.logo{
     line-height: 30px;
     margin: o auto;
 }
-/*barra secundaria de navegacion index*/
-.nvgdos{
-    display: flex;
-    height: 100%;
-    width: 100%;
-    background-color: #232F3E;
-    text-align: center;
-    padding: 20px;
-    color: #FFFFFF;
-}
-/*barra de navegacion hola e identificate*/
-.inicia-sesion{
-    background-color: #FFFFFF
-    color: black;
-    height: 400px;
-    width: 30rem;
-    padding-left: 90px;
-    padding-right: 90px;
-    padding-top: 40px;
-    padding-inline: 90px;
-    margin: 0 auto;
-    border-radius: 50px;
-}
-.input{
-    width: 320px;
-    align-items: center;
-}
-.btn-continue{
-    border-radius: 20px;
-    width: 320px;
-    margin: 10px;
-    background-color: yellow;
-    color: black;
-    align-items: center;
-}
 /*seccion y articulos index*/
-
 section .hijo{
     color: white;
     background-color: #202a36;
@@ -165,7 +121,55 @@ section .hijo img{
     text-align: center;
     color: #FFFFFF;
     }
-
+/* body dos hola e identificate*/
+.body-dos{
+    background-color: #FFFFFF;
+    font-family: sans-serif;
+    margin: 0;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+/* logo hola e identificate*/
+.img-logo{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    margin-right: 20px
+}    
+/*barra de navegacion hola e identificate*/
+.inicia-sesion{
+    background-color: #F8972C;
+    color: black;
+    height: 500px;
+    width: 30rem;
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-top: 55px;
+    padding-inline: 90px;
+    margin: 0 auto;
+    border-radius: 50px;
+}
+.input{
+    width: 300px;
+    align-items: center;
+    margin: 10px;
+}
+.btn-continue{
+    border-radius: 20px;
+    width: 300px;
+    margin: 10px;
+    background-color: yellow;
+    color: black;
+    align-items: center;
+}
+.need{
+    padding: 2px;
+    border-radius: 20px;
+    margin: 2px;
+}
+.foot{
+    text-align: center;
+    margin: 40px;
+}
 @media screen and (min-width:1200px ) {
     .nvgdos{
         text-align: center;
@@ -180,4 +184,36 @@ section .hijo img{
         justify-content: space-around;
         padding: 50px;
     }
+}
+/* body electronicos*/
+.Electronicos{
+        color: #131921;
+        color: #FFFFFF;
+        font-family: sans-serif;
+        margin: 0;
+        font-family: 'Barlow Condensed', sans-serif;
+}
+#contenedor-productos{
+    justify-content: space-around;
+    background-color: #131921;
+}
+.Catalogo{
+    color: #FFFFFF;
+}
+.card-img-top{
+    height: 250px;
+    width: 250px;
+}
+.card{
+    background-color: #131921;
+    color: #FFFFFF;
+}
+.primary{
+    border-radius: 20px;
+    color: white;
+    background-color: aqua;
+}
+.express{
+    text-align: center;
+    color: #FFFFFF;
 }
